@@ -1,0 +1,47 @@
+
+# What's your age? 10
+# Please choose time unit: Months, Weeks, Days, Hours, Minutes, Seconds. 
+# Note: You can write the first letter or the full name of the time unit. m
+# You lived for 120 Months
+def calculate_duration(age, time_unit):
+    
+    if time_unit.lower() == 'months':
+        duration = age * 12
+        print(f'You lived for {duration} months')
+    elif time_unit.lower() == 'weeks':
+        duration = age * 12
+        print(f'You lived for {duration} weeks')
+
+    elif time_unit.lower() == 'days':
+        duration = age * 365
+        print(f'You lived for {duration} days')
+        
+    elif time_unit.lower() == 'hours':
+        duration = age * 365 * 24
+        print(f'You lived for {duration} hours')
+        
+    elif time_unit.lower() == 'minutes':
+        duration = age * 365 * 24 * 60
+        print(f'You lived for {duration} minutes')
+
+    elif time_unit.lower() == 'seconds':
+        duration = age * 365 * 24 * 60 * 60
+        print(f'You lived for {duration} seconds')
+
+    else:
+        print('Invalid time unit input.')
+
+
+def main():
+    age = int(input("What's your age? "))
+    time_unit = input("Please choose time unit: Months, Weeks, Days, Hours, Minutes, Seconds. ").strip()
+    print(calculate_duration(age, time_unit))
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
